@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		797AC9122473278E00181876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AC9112473278E00181876 /* AppDelegate.swift */; };
+		797AC9142473278E00181876 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AC9132473278E00181876 /* SceneDelegate.swift */; };
+		797AC9172473278E00181876 /* hiit_workout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 797AC9152473278E00181876 /* hiit_workout.xcdatamodeld */; };
+		797AC9192473278E00181876 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AC9182473278E00181876 /* ContentView.swift */; };
+		797AC91B2473279000181876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797AC91A2473279000181876 /* Assets.xcassets */; };
+		797AC91E2473279000181876 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797AC91D2473279000181876 /* Preview Assets.xcassets */; };
+		797AC9212473279000181876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797AC91F2473279000181876 /* LaunchScreen.storyboard */; };
+		797AC92C2473279000181876 /* hiit_workoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AC92B2473279000181876 /* hiit_workoutTests.swift */; };
+		797AC9372473279000181876 /* hiit_workoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AC9362473279000181876 /* hiit_workoutUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		797AC9282473279000181876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797AC9062473278E00181876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797AC90D2473278E00181876;
+			remoteInfo = "hiit-workout";
+		};
+		797AC9332473279000181876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797AC9062473278E00181876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797AC90D2473278E00181876;
+			remoteInfo = "hiit-workout";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		797AC90E2473278E00181876 /* hiit-workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hiit-workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797AC9112473278E00181876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		797AC9132473278E00181876 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		797AC9162473278E00181876 /* hiit_workout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hiit_workout.xcdatamodel; sourceTree = "<group>"; };
+		797AC9182473278E00181876 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		797AC91A2473279000181876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		797AC91D2473279000181876 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		797AC9202473279000181876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		797AC9222473279000181876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797AC9272473279000181876 /* hiit-workoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hiit-workoutTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797AC92B2473279000181876 /* hiit_workoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiit_workoutTests.swift; sourceTree = "<group>"; };
+		797AC92D2473279000181876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797AC9322473279000181876 /* hiit-workoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hiit-workoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797AC9362473279000181876 /* hiit_workoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiit_workoutUITests.swift; sourceTree = "<group>"; };
+		797AC9382473279000181876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		797AC90B2473278E00181876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797AC9242473279000181876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797AC92F2473279000181876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797AC9052473278E00181876 = {
+			isa = PBXGroup;
+			children = (
+				797AC9102473278E00181876 /* hiit-workout */,
+				797AC92A2473279000181876 /* hiit-workoutTests */,
+				797AC9352473279000181876 /* hiit-workoutUITests */,
+				797AC90F2473278E00181876 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		797AC90F2473278E00181876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797AC90E2473278E00181876 /* hiit-workout.app */,
+				797AC9272473279000181876 /* hiit-workoutTests.xctest */,
+				797AC9322473279000181876 /* hiit-workoutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		797AC9102473278E00181876 /* hiit-workout */ = {
+			isa = PBXGroup;
+			children = (
+				797AC9112473278E00181876 /* AppDelegate.swift */,
+				797AC9132473278E00181876 /* SceneDelegate.swift */,
+				797AC9182473278E00181876 /* ContentView.swift */,
+				797AC91A2473279000181876 /* Assets.xcassets */,
+				797AC91F2473279000181876 /* LaunchScreen.storyboard */,
+				797AC9222473279000181876 /* Info.plist */,
+				797AC9152473278E00181876 /* hiit_workout.xcdatamodeld */,
+				797AC91C2473279000181876 /* Preview Content */,
+			);
+			path = "hiit-workout";
+			sourceTree = "<group>";
+		};
+		797AC91C2473279000181876 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				797AC91D2473279000181876 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		797AC92A2473279000181876 /* hiit-workoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				797AC92B2473279000181876 /* hiit_workoutTests.swift */,
+				797AC92D2473279000181876 /* Info.plist */,
+			);
+			path = "hiit-workoutTests";
+			sourceTree = "<group>";
+		};
+		797AC9352473279000181876 /* hiit-workoutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				797AC9362473279000181876 /* hiit_workoutUITests.swift */,
+				797AC9382473279000181876 /* Info.plist */,
+			);
+			path = "hiit-workoutUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		797AC90D2473278E00181876 /* hiit-workout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797AC93B2473279100181876 /* Build configuration list for PBXNativeTarget "hiit-workout" */;
+			buildPhases = (
+				797AC90A2473278E00181876 /* Sources */,
+				797AC90B2473278E00181876 /* Frameworks */,
+				797AC90C2473278E00181876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hiit-workout";
+			productName = "hiit-workout";
+			productReference = 797AC90E2473278E00181876 /* hiit-workout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		797AC9262473279000181876 /* hiit-workoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797AC93E2473279100181876 /* Build configuration list for PBXNativeTarget "hiit-workoutTests" */;
+			buildPhases = (
+				797AC9232473279000181876 /* Sources */,
+				797AC9242473279000181876 /* Frameworks */,
+				797AC9252473279000181876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				797AC9292473279000181876 /* PBXTargetDependency */,
+			);
+			name = "hiit-workoutTests";
+			productName = "hiit-workoutTests";
+			productReference = 797AC9272473279000181876 /* hiit-workoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		797AC9312473279000181876 /* hiit-workoutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797AC9412473279100181876 /* Build configuration list for PBXNativeTarget "hiit-workoutUITests" */;
+			buildPhases = (
+				797AC92E2473279000181876 /* Sources */,
+				797AC92F2473279000181876 /* Frameworks */,
+				797AC9302473279000181876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				797AC9342473279000181876 /* PBXTargetDependency */,
+			);
+			name = "hiit-workoutUITests";
+			productName = "hiit-workoutUITests";
+			productReference = 797AC9322473279000181876 /* hiit-workoutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		797AC9062473278E00181876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Mitchel Wassler";
+				TargetAttributes = {
+					797AC90D2473278E00181876 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					797AC9262473279000181876 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 797AC90D2473278E00181876;
+					};
+					797AC9312473279000181876 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 797AC90D2473278E00181876;
+					};
+				};
+			};
+			buildConfigurationList = 797AC9092473278E00181876 /* Build configuration list for PBXProject "hiit-workout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 797AC9052473278E00181876;
+			productRefGroup = 797AC90F2473278E00181876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				797AC90D2473278E00181876 /* hiit-workout */,
+				797AC9262473279000181876 /* hiit-workoutTests */,
+				797AC9312473279000181876 /* hiit-workoutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		797AC90C2473278E00181876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797AC9212473279000181876 /* LaunchScreen.storyboard in Resources */,
+				797AC91E2473279000181876 /* Preview Assets.xcassets in Resources */,
+				797AC91B2473279000181876 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797AC9252473279000181876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797AC9302473279000181876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		797AC90A2473278E00181876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797AC9122473278E00181876 /* AppDelegate.swift in Sources */,
+				797AC9142473278E00181876 /* SceneDelegate.swift in Sources */,
+				797AC9192473278E00181876 /* ContentView.swift in Sources */,
+				797AC9172473278E00181876 /* hiit_workout.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797AC9232473279000181876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797AC92C2473279000181876 /* hiit_workoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797AC92E2473279000181876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797AC9372473279000181876 /* hiit_workoutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		797AC9292473279000181876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797AC90D2473278E00181876 /* hiit-workout */;
+			targetProxy = 797AC9282473279000181876 /* PBXContainerItemProxy */;
+		};
+		797AC9342473279000181876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797AC90D2473278E00181876 /* hiit-workout */;
+			targetProxy = 797AC9332473279000181876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		797AC91F2473279000181876 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				797AC9202473279000181876 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		797AC9392473279000181876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		797AC93A2473279100181876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		797AC93C2473279100181876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"hiit-workout/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "hiit-workout/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchelwassler.hiit-workout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		797AC93D2473279100181876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"hiit-workout/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "hiit-workout/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchelwassler.hiit-workout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		797AC93F2473279100181876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "hiit-workoutTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchelwassler.hiit-workoutTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hiit-workout.app/hiit-workout";
+			};
+			name = Debug;
+		};
+		797AC9402473279100181876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "hiit-workoutTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchelwassler.hiit-workoutTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hiit-workout.app/hiit-workout";
+			};
+			name = Release;
+		};
+		797AC9422473279100181876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "hiit-workoutUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchelwassler.hiit-workoutUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "hiit-workout";
+			};
+			name = Debug;
+		};
+		797AC9432473279100181876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "hiit-workoutUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchelwassler.hiit-workoutUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "hiit-workout";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		797AC9092473278E00181876 /* Build configuration list for PBXProject "hiit-workout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797AC9392473279000181876 /* Debug */,
+				797AC93A2473279100181876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797AC93B2473279100181876 /* Build configuration list for PBXNativeTarget "hiit-workout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797AC93C2473279100181876 /* Debug */,
+				797AC93D2473279100181876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797AC93E2473279100181876 /* Build configuration list for PBXNativeTarget "hiit-workoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797AC93F2473279100181876 /* Debug */,
+				797AC9402473279100181876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797AC9412473279100181876 /* Build configuration list for PBXNativeTarget "hiit-workoutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797AC9422473279100181876 /* Debug */,
+				797AC9432473279100181876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		797AC9152473278E00181876 /* hiit_workout.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				797AC9162473278E00181876 /* hiit_workout.xcdatamodel */,
+			);
+			currentVersion = 797AC9162473278E00181876 /* hiit_workout.xcdatamodel */;
+			path = hiit_workout.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 797AC9062473278E00181876 /* Project object */;
+}
