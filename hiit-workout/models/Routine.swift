@@ -28,7 +28,7 @@ class Routine {
         Exercise(name: "Overhead Press",            reps: 8,  catagory: catagories[0], barbell: true),
         Exercise(name: "Push Ups",                  reps: 10, catagory: catagories[0]),
         Exercise(name: "Dips",                      reps: 6,  catagory: catagories[0]),
-        Exercise(name: "Kettlebell Swings",         reps: 6,  catagory: catagories[0]),
+        Exercise(name: "Kettlebell Swings",         reps: 12,  catagory: catagories[0]),
         Exercise(name: "Pull Ups",                  reps: 6,  catagory: catagories[1]),
         Exercise(name: "Barbell Rows",              reps: 8,  catagory: catagories[1], barbell: true),
         Exercise(name: "Bodyweight Rows",           reps: 6,  catagory: catagories[1]),
