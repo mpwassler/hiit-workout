@@ -18,10 +18,24 @@ struct WorkoutView: View {
     var body: some View {
         VStack {
             listDispay
+            Spacer()
+            controls
         }.onAppear {
             let routine = Routine()
             self.exercises = routine.generate()
+            let clock = CountDown(minutes: 5, seconds: 0) 
+            clock.start { clock in
+                    
+            }
         }
+    }
+    
+    private var controls: some View {
+      return AnyView( HStack {
+        Button(action: startWorkout) {
+            Text("Start Workout")
+        }
+      }.padding())
     }
     
     private var listDispay: some View {
@@ -37,6 +51,10 @@ struct WorkoutView: View {
             Spacer()
             Text("\(item.reps)")
           }.padding()
+           .overlay(
+              RoundedRectangle(cornerRadius: 8)
+                  .stroke(Color.black, lineWidth: 1)
+          ).padding()
           
         })
     }
