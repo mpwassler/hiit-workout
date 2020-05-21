@@ -14,6 +14,6 @@ Roadmap:
 * some data persistance to ensure it doesn't assign the same workouts two days in a row
 * the ability to enter what equipment you have and adjust the workouts based on that
 
-![home](screenshots/start.png)
+<img alt="home" src="screenshots/start.png" width="300" />
+<img alt="workout" src="screenshots/routine.png" width="300" />
 
-![workout](screenshots/routine.png)
