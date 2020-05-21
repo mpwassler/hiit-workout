@@ -7,34 +7,112 @@
 //
 
 import SwiftUI
+import AVFoundation
 
-func startWorkout() -> Void {
-    
-}
 
 struct WorkoutView: View {
     @State var exercises : [Exercise]?
+    @State var timeLeft = "05:00"
+    @State var set = 1
+    @State var isStarted = false
+    @State var isResting = false
+    let totalSets = 3
     
-    var body: some View {
-        VStack {
-            listDispay
-            Spacer()
-            controls
-        }.onAppear {
-            let routine = Routine()
-            self.exercises = routine.generate()
-            let clock = CountDown(minutes: 5, seconds: 0) 
-            clock.start { clock in
-                    
+    var clock = CountDown(minutes: 5, seconds: 0)
+    
+    func startRest() -> Void {
+        isResting = true
+        clock.start (onUpdate: { timeString in
+            self.timeLeft = timeString
+        }) {
+            AudioServicesPlaySystemSound(SystemSoundID(1020))
+            self.clock.reset()
+            self.isResting = false
+            self.set += 1
+            self.startWorkout()
+        }
+    }
+    
+    func startWorkout() -> Void {
+        isStarted = true
+        clock.start (onUpdate: { timeString in
+            self.timeLeft = timeString
+        }) {
+            AudioServicesPlaySystemSound(SystemSoundID(1322))
+            if self.set <= self.totalSets {
+                self.clock.reset()
+                self.startRest()
             }
         }
     }
     
+    func pauseWorkout() -> Void {
+        isStarted = false
+        clock.stopTimer()
+    }
+    
+    var body: some View {
+        ZStack {
+             Color(red: 38 / 255, green: 38 / 255, blue: 38 / 255)
+                 .edgesIgnoringSafeArea(.all)
+             VStack {
+                 stopWatch
+                 listDispay
+                 Spacer()
+                 controls
+             }.onAppear {
+                 let routine = Routine()
+                 self.exercises = routine.generate()
+             }.onDisappear {
+                self.clock.stopTimer()
+                self.timeLeft = "05:00"
+                self.clock.reset()
+                self.set = 1
+                self.isStarted = false
+                self.isResting = false
+             }
+         }
+         .navigationBarTitle("", displayMode: .inline)
+         
+    }
+    
+    private var stopWatch: some View {
+      return AnyView( HStack {
+        Text(isResting ? "Rest" : "Set \(set) / \(totalSets)")
+            .font(.title)
+            .foregroundColor(Color.white)
+        Spacer()
+        Text(timeLeft)
+            .font(.title)
+            .foregroundColor(Color.white)
+      }.padding()
+        .background(
+            Color.black
+              .edgesIgnoringSafeArea(.all)
+        )
+      )
+    }
+    
     private var controls: some View {
       return AnyView( HStack {
-        Button(action: startWorkout) {
-            Text("Start Workout")
+        if isStarted {
+            Button(action: { self.pauseWorkout() }) {
+                Image(systemName: "pause.fill")
+                .frame(width: 100, height: 100)
+                .foregroundColor(Color.white)
+                .background(Color.black)
+                .clipShape(Circle())
+            }
+        } else {
+            Button(action: { self.startWorkout() }) {
+                Image(systemName: "play.fill")
+                .frame(width: 100, height: 100)
+                .foregroundColor(Color.white)
+                .background(Color.black)
+                .clipShape(Circle())
+            }
         }
+        
       }.padding())
     }
     
@@ -45,17 +123,20 @@ struct WorkoutView: View {
         return AnyView( ForEach(exercises) { item in
           HStack {
             VStack(alignment: .leading) {
-                Text(item.name).font(.title)
-                Text(item.catagory).font(.subheadline)
+                Text(item.name)
+                    .font(.title)
+                    .foregroundColor(Color.white)
+                Text(item.catagory)
+                    .font(.subheadline)
+                    .foregroundColor(Color.white)
             }
             Spacer()
             Text("\(item.reps)")
+                .foregroundColor(Color.white)
           }.padding()
-           .overlay(
-              RoundedRectangle(cornerRadius: 8)
-                  .stroke(Color.black, lineWidth: 1)
-          ).padding()
-          
+          Divider()
+          .frame(height: 1)
+          .background(Color.black)
         })
     }
 }
@@ -63,10 +144,18 @@ struct WorkoutView: View {
 struct ContentView: View {
     var body: some View {
         NavigationView {
-          NavigationLink(
-            destination: WorkoutView()) {
-              Text("Start")
-          }
+            ZStack {
+                Color(red: 38 / 255, green: 38 / 255, blue: 38 / 255)
+                    .edgesIgnoringSafeArea(.all)
+                NavigationLink(
+                  destination: WorkoutView()) {
+                    Text("Go")
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(Color.white)
+                    .background(Color.black)
+                    .clipShape(Circle())
+                }
+            }
         }
     }
 }
